@@ -1,0 +1,93 @@
+﻿
+
+<DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <title>Dungeons and Cats</title>
+
+
+        <script type="text/javascript" src="js/three.js"></script>
+        <script type="text/javascript" src="js/physi.js"></script>
+        <script type="text/javascript" src="js/three.js"></script>
+        <script type="text/javascript" src="js/PointerLockControl.js"></script>
+
+        <script type="text/javascript" src="js/mainFile.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <script type="text/javascript" src="js/menu.js"></script>
+
+        <script type="text/javascript" src="js/scenario.js"></script>
+        <script type="text/javascript" src="js/constants1.js"></script>
+        <script type="text/javascript" src="js/cannon.js"></script>
+
+        <script type="text/javascript" src="js/movement.js"></script>
+        <script type="text/javascript" src="js/FBXLoader.js"></script>
+        <script type="text/javascript" src="js/GLTFLoader.js"></script>
+
+        <script type="text/javascript" src="js/loader.js"></script>
+        <script type="text/javascript" src="js/animations.js"></script>
+        <script type="text/javascript" src="js/ammo.js"></script>
+        <script type="text/javascript" src="js/ammo.wasm.js"></script>
+
+
+        <script type="text/javascript" src="js/physics.js"></script>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    </head>
+
+    <body>
+        <div id="Menu">
+            <img class="background" src="cat-lord.jpg" />
+            <center><img src="title.png" class="title" /></center>
+            <center><button class="blink_text" id="start" onclick=" home()">Start</button></center>
+
+        </div>
+
+        <div id="playGame">
+            <img class="background" src="cat-lord.jpg"/>
+            <div id="choice">
+                <div class="box1">
+                    <div class="box2">
+                        <img class="img" id="character" src="warrior.jpg" />
+                        <button  class="arrow-right" onclick="nextCharacter()"><img  class="img" src="arrow.png" /></button>
+                        <button class="arrow-left" onclick="previousCharacter()"><img  class="img" src="arrow.png" /></button>
+
+                    </div>
+                    <div class="box2"></div>
+                </div>
+                <div class="box1">
+                    <div class="box2">
+                        <img class="img" id="level" src="background/forest.jfif" />
+                        <button class="arrow-right" onclick="nextLevel()"><img class="img" src="arrow.png" /></button>
+                        <button class="arrow-left" onclick="previousLevel()"><img class="img" src="arrow.png" /></button>
+                    </div>
+                    <div class="box2">
+
+                    </div>
+                </div>
+            </div>
+            <div id="actions">
+                <button class="button"  onclick="play()">START!</button>
+                <button class="button" onclick="help()">HELP</button>
+                <button class="button" onclick="menu()">BACK</button>
+            </div>
+        </div>
+
+        <div id="helper">
+            <button onclick="home()">BACK</button>
+            <center><h1 class="Title">Dungeons and Cats</h1></center>
+        </div>
+        <div id="scene">
+
+            <div id="blocker">
+                <div id="instructions">
+                    <strong>Click to look!</strong>
+                </div>
+            </div>
+        </div>
+        <div id="container"></div>
+
+    </body>
+</html>
