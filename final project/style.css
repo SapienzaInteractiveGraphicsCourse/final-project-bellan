@@ -1,0 +1,310 @@
+﻿@font-face {
+    font-family: 'Press Start 2P';
+    src: url('game_font.ttf');
+}
+
+div,
+p {
+    font-family: 'Press Start 2P';
+}
+
+.blink_text {
+    animation: 1s blinker linear infinite;
+}
+
+.title {
+    animation: 2s goa ease-in-out;
+    animation-fill-mode: backwards;
+    width: 70vh;
+    height: 20vh;
+    margin-top: 15vh;
+}
+
+
+@keyframes goa {
+    from {
+        position: relative;
+        top: -50px;
+    }
+
+    to {
+        position: relative;
+        top: 130px;
+    }
+}
+
+.blink_text b {
+    color: black;
+}
+
+.blink_text button {
+    color: black;
+}
+
+@keyframes blinker {
+    0% {
+        opacity: 1.0;
+    }
+
+    50% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}
+
+body {
+    margin: 0;
+    font-family: 'Press Start 2P'
+}
+
+canvas {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    background: url(cat-lord.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+
+.arrow-right {
+    position: relative;
+    background-color: transparent;
+    margin-top:55%;
+    margin-right:-20%;
+    width:20%;
+    height:20%;
+    float:right;
+    z-index:2;
+
+}
+
+.arrow-left {
+    position: relative;
+    margin-top: 55%;
+    margin-left:-20%;
+    width: 20%;
+    height: 20%;
+    background-color: transparent;
+    transform: rotate(180deg);
+    float: left;
+    z-index:2;
+}
+
+
+.background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0.6;
+}
+
+.button{
+    position:relative;
+    margin-top:3%;
+    margin-left:2.5%;
+    width:30%;
+    height:40%;
+    float:left;
+}
+
+ .box1 {
+   position:relative;
+    margin-top:3.5%;
+    margin-left:5%;
+    border:5px solid black;
+    width:42.5%;
+    height:80%;
+    float:left;
+}
+.box2 {
+    position: relative;
+    margin-top: 2%;
+    margin-left: 2%;
+    border: 5px solid black;
+    width: 47%;
+    height: 94%;
+    float: left;
+}
+.img{
+    position:relative;
+    width:100%;
+    height:100%;
+}
+
+
+
+
+#Menu {
+    background-color:white;
+    height: 103vh;
+   /* background-image: url('cat-lord.jpg');*/
+    background-size: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+#start {
+    border: none;
+    background-color: inherit;
+    color: black;
+    margin-top: 50vh;
+    font-size: 20px;
+}
+
+#playGame {
+    background-color: white;
+    height: 103vh;
+   /* background-image: url('cat-lord.jpg');*/
+    background-size: 100%;
+    background-position: top;
+   
+    display: none;
+}
+
+#helper {
+    background-color: white;
+    height: 103vh;
+    background-size: 100%;
+    background-position: top;
+    display: none;
+}
+
+#scene{
+    display:none;
+}
+#blocker {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+#instructions {
+    width: 100%;
+    height: 100%;
+
+    color: #ffffff;
+    text-align: center;
+    font-family: Arial;
+    font-size: 14px;
+    line-height: 24px;
+    cursor: pointer;
+}
+
+#choice {
+    position: relative;
+    margin-top: 50px;
+    margin-left: 5vw;
+    border: 5px #2f1a55 solid;
+    width:90%;
+    height:70%;
+}
+#actions {
+    position: relative;
+    margin-top: 10px;
+    margin-left: 5vw;
+    border: 5px #2f1a55 solid;
+    width: 90%;
+    height: 20%;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+
+
+.sect-services {
+    background-color: #efefef;
+}
+
+    .sect-services .col-md-3 {
+        padding: 0;
+    }
+
+.services-item {
+    position: relative;
+    padding-bottom: 5px;
+    border: 5px #2f1a55 solid;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+    transition: transform .5s ease, -webkit-transform .5s ease;
+    text-align: center;
+    background-color: #FFF;
+}
+
+    .services-item a.services-item-image {
+        display: block;
+    }
+
+    .services-item:hover {
+        -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0 0 32px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0 0 32px;
+        z-index: 4;
+        -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        transform: scale(1.05);
+        border-color: #ffcc00;
+    }
+
+        .services-item:hover a.services-item-image {
+            display: block;
+        }
+
+            .services-item:hover a.services-item-image .fa {
+                opacity: 4;
+            }
+
+            .services-item:hover a.services-item-image::before {
+                opacity: .7;
+            }
+
+        .services-item:hover .services-item-stars {
+            color: #ffcc00;
+        }
+
+            .services-item:hover .services-item-stars .fa {
+                margin: 0 5px;
+            }
+
+    .services-item h4 {
+        font-size: 1.25em;
+        margin-bottom: 10px;
+    }
+
+.services-item-image {
+    min-height: 190px;
+    background-size: cover;
+    position: relative;
+}
+
+    .services-item-image .fa {
+        font-size: 30px;
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -10px;
+        margin-top: -10px;
+        opacity: 0;
+        -webkit-transition: all .5s ease;
+        transition: all .5s ease;
+    }
+
+    .services-item-image::before {
+        position: absolute;
+        content: ' ';
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: #22133e;
+        opacity: 0;
+        -webkit-transition: all .5s ease;
+        transition: all .5s ease;
+    }
+
