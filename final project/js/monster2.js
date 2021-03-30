@@ -101,16 +101,16 @@ function updateMonster(delta) {
             monsters[i].model.position.x -= speedMonster * delta * direction.x;
             monsters[i].model.position.z -= speedMonster * delta * direction.z;
         }
-        /* else if (20 > direction.length()) {
+         else if (25 > direction.length()) {
              direction.normalize();
              monsters[i].model.position.x += speedMonster * delta * direction.x;
              monsters[i].model.position.z += speedMonster * delta * direction.z;
-         }*/
-        else if (25 > direction.length()) {
+         }
+        else if (20 > direction.length()) {
             monsters[i].model.position.x += speedMonster * delta;
             monsters[i].model.position.z += speedMonster * delta;
         }
-        if (20 > direction.length()) {
+        if (35 > direction.length()) {
             cat.life -= monsters[i].strength;
         }
 
