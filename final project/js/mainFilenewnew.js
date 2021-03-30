@@ -15,7 +15,7 @@ characters[0] = "warrior.jpg";
 characters[1] = "wizard.jpg";
 characters[2] = "archer.jpg";
 levels[0] = "background/forest.jfif";
-levels[1] = "background/volcano.png";
+levels[1] = "background/volcano.PNG";
 levels[2] = "background/ocean.jfif";
 
 var velocity = new THREE.Vector3();
