@@ -120,7 +120,7 @@ function onMouseDown(event) {
         ballCounter++;
         var loader = new THREE.TextureLoader();
         // Creates a ball and throws it
-        var ballTexture = loader.load('textures/fire.png');
+        var ballTexture = loader.load('textures/fire.PNG');
         var ballMaterial = new THREE.MeshPhongMaterial({ map: ballTexture, emissive: ballColor, emissiveIntensity: 1 });
         var ballMass = 6000;
         var ballRadius = 4;
