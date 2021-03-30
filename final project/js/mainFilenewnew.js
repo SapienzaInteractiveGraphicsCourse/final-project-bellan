@@ -79,7 +79,7 @@ function init() {
 }
 
 function animate() {
-    if(load)$('#loading').fadeOut(500);
+    if(loaded)$('#loading').fadeOut(500);
     if (!GAMEOVER && !PAUSE && !MENU) {
 
     if (clock.elapsedTime - time > (wave-1)) {
