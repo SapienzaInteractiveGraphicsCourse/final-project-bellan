@@ -11,11 +11,9 @@ function base() {
 
         // skybox
         case 0:
-            var path = "night/";
+            scene.background = new THREE.Color(0x008fb3);
+            scene.fog = new THREE.Fog(0xff6600, 500, 10000);
             var groundTexture = loader.load('textures/grass.jpg');
-            path = "textures/sky/" + path
-            var skybox = skyBox(path);
-            scene.add(skybox);
             
             break;
         case 1:
