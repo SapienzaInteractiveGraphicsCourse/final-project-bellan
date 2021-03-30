@@ -70,7 +70,7 @@ function init() {
 
     window.addEventListener('resize', onWindowResize, false);
     window.addEventListener('mousedown', onMouseDown, false); 
-    window.addEventListener('load', onLoadEnd, false);
+    //window.addEventListener('load', onLoadEnd, false);
 
     move();
     animate();
@@ -79,6 +79,7 @@ function init() {
 }
 
 function animate() {
+    if(load)$('#loading').fadeOut(500);
     if (!GAMEOVER && !PAUSE && !MENU) {
 
     if (clock.elapsedTime - time > (wave-1)) {
