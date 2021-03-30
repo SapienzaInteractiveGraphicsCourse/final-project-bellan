@@ -10,5 +10,6 @@ In this project there is an extensive use of the library three.js, as well as ph
 - **LEFT CLICK** to shoot
 - **ESC** to pause
 # Known Issues
+The pause function is no longer avaiable; by pressing ESC you will stop the animation but the RESUME and BACK button are not showing.
 # Link
 You can try the game at this link : https://sapienzainteractivegraphicscourse.github.io/final-project-bellan/final%20project/
