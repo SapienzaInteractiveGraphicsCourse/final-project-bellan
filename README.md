@@ -6,8 +6,8 @@ This is the final project of the Interactive Graphic couse held by prof. Marco S
 # Libraries
 In this project there is an extensive use of the library three.js, as well as physi.js, ammo.js and jQuery.js.
 # Commands
--**W**,**A**,**S**,**D** or directional keys to move
--**SPACE** to jump
--**LEFT CLICK** to shoot
--**ESC** to pause
+- **W**,**A**,**S**,**D** or directional keys to move
+- **SPACE** to jump
+- **LEFT CLICK** to shoot
+- **ESC** to pause
 # Known Issues
