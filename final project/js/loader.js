@@ -151,7 +151,7 @@ function loadScene(l) {
 
                             break;
                         case 1:
-                            obj.scale.set(10, 10, 10);
+                            obj.scale.set(100, 100, 100);
                             break;
                         case 2:
                             obj.scale.set(100, 100, 100);
