@@ -13,7 +13,7 @@ function monster2(idx) {
     switch (l) {
         case (0):
             life = 100;
-            strength = 50;
+            strength = 10;
             var material = new THREE.MeshPhongMaterial
                 ({
                     color: 0x003300, transparent: true, opacity: 1
@@ -22,7 +22,7 @@ function monster2(idx) {
             break;
         case (1):
             life = 300;
-            strength = 150;
+            strength = 20;
             var material = new THREE.MeshPhongMaterial
                 ({
                     color: 0x990000, transparent: true, opacity: 1
@@ -30,7 +30,7 @@ function monster2(idx) {
             break;           
         case (2):
             life = 200;
-            strength = 100;
+            strength = 30;
             var material = new THREE.MeshPhongMaterial
                 ({
                     color: 0x000066, transparent: true, opacity: 1
