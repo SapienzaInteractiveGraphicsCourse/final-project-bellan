@@ -25,7 +25,7 @@ function base() {
         case 2:
             scene.background = new THREE.Color(0x000066);
             scene.fog = new THREE.Fog(0x0000cc, 500, 10000);
-            var groundTexture = loader.load('textures/ocean_ground.png');
+            var groundTexture = loader.load('textures/ocean_ground.PNG');
            
             break;
 
