@@ -40,7 +40,6 @@ function gameOver() {
     document.getElementById('blocker').style.display = "none";
     document.getElementById('playGame').style.display = "none";
     document.getElementById('gameOver').style.display = "block";
-    document.getElementById('healtBar').style.display = 'none';
 
 }
 
@@ -51,7 +50,6 @@ function play() {
     document.getElementById('playGame').style.display = "none";
     document.getElementById('helper').style.display = "none";
     document.getElementById('loading').style.display = 'block';
-    document.getElementById('healtBar').style.display = 'block';
 
     init();
 }
